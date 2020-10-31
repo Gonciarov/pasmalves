@@ -1,18 +1,17 @@
 import './App.css';
-import React, { Component } from 'react'
+import React from 'react'
 import Navigation from './navigation';
 
 
-export class App extends Component {
+const App = () => {
 
-  render() {
+  
     return (
       <div>
         <Navigation />
         
       </div>
     )
-  }
 }
 
 export default App
