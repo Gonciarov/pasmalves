@@ -4,7 +4,7 @@ const Contact = () => {
     return (
       <div>
         <div id="contact">
-          <div className="container ">
+          <div className="container">
             <div className="col-md-8">
               <div className="row">
                 <div className="section-title">
@@ -58,6 +58,7 @@ const Contact = () => {
                 </form>
               </div>
             </div>
+            
             <div className="col-md-3 col-md-offset-1">
               <div className="contact-item">
                 <h3>Contact Info</h3>
@@ -95,7 +96,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+      
     );
   }
 
