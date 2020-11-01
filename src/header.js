@@ -12,7 +12,7 @@ const Header = () => {
                     WE DELIVER
                   </h1>
                   <p>
-                  Cargo transportation within the EU, Russia and beyond. 25 years of flawless service.
+                  Cargo transportation within the EU, Russia and beyond. 25 years of flawless service across the continent.
                   </p>
          
                   

@@ -5,7 +5,7 @@ const Contact = () => {
       <div>
         <div id="contact">
           <div className="container">
-            <div className="col-md-8">
+            <div className="col-md-8 inline-block">
               <div className="row">
                 <div className="section-title">
                   <h2>Get In Touch</h2>
@@ -59,38 +59,38 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="col-md-3 col-md-offset-1">
+            <div className="col-md-3 col-md-offset-1 inline-block">
               <div className="contact-item">
                 <h3>Contact Info</h3>
                 <p>
                   <span>
-                    <i className="fa fa-map-marker"></i> Address
-                  </span>
+                    <i className="fa fa-map-marker"></i> Address: 
+                  </span>{" "}
                   Sedulinos al. 35-17, LT-31232 Visaginas Lithuania
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-phone"></i> Phone
+                    <i className="fa fa-phone"></i> Phone: 
                   </span>{" "}
-                  ..
+                  +370 698 37152
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                  <i class="fa fa-user-tie"></i> Director
+                  <i class="fa fa-user-tie"></i> Director: 
                   </span>{" "}
-                  ..
+                  Jurij Kiricenko
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                  <i class="fa fa-envelope"></i> Email
+                  <i class="fa fa-envelope"></i> Email: 
                   </span>{" "}
-                  ..
+                  pasmalves@tts.lt
                 </p>
               </div>
             </div>

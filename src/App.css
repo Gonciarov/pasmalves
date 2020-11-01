@@ -184,12 +184,18 @@ header .intro-text {
 
 /* Contact */
 
-.display {
-  display: inline;
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
 }
 
+.inline {
+  display: inline;
+  vertical-align: top;
+}
+
+
 #contact {
-  
 	padding: 100px 0 60px 0;
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 	color: rgba(255,255,255,.75);
@@ -217,7 +223,7 @@ header .intro-text {
 }
 #contact h3 {
 	color: #fff;
-	margin-top: 80px;
+	margin-top: 20px;
 	margin-bottom: 25px;
 	padding-bottom: 20px;
 	font-weight: 400;
@@ -245,7 +251,7 @@ label {
 	float: left;
 }
 #contact .form-control {
-	display: inline-block;
+	display: block;
 	width: 100%;
 	padding: 6px 12px;
 	font-size: 16px;
@@ -280,17 +286,17 @@ color: #777;
 color: #777;
 }
 #contact .contact-item {
-  margin: 20px 0;
+	margin: 0 0;
 }
 #contact .contact-item span {
 	color: rgba(255,255,255,1);
 	margin-bottom: 10px;
-  display: inline-block;
-  vertical-align:top;
+	display: block;
 }
 #contact .contact-item i.fa {
 	margin-right: 10px;
 }
+
 
 
 
