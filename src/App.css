@@ -104,7 +104,8 @@ hr {
 }
 
 #about img {
-	width: 450px;
+  width: 450px;
+  max-width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
 	background: #fff;
@@ -124,7 +125,9 @@ hr {
 
 .intro {
 	display: table;
-	width: 100%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 	padding: 0;
 	background: url(./truck.jpg) center center no-repeat;
 	background-color: #e5e5e5;
