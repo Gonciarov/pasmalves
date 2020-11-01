@@ -6,7 +6,7 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-md-6">
-        <img src="about.jpg" className="img-responsive" alt=""/></div>
+        <img src="about.jpg" className="img-responsive resize" alt=""/></div>
         <div className="col-xs-12 col-md-6">
               <div className="about-text">
                 <h2>About Us</h2>

@@ -123,6 +123,10 @@ hr {
   text-align: center;
 }
 
+.resize {
+  max-width: 100%;
+}
+
 .intro {
 	display: table;
   width: 100%;
