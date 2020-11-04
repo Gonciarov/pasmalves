@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pasmalves2-dev-104641-authRole",
+      "UnauthRoleArn": "arn:aws:iam::015824586188:role/amplify-pasmalves2-dev-104641-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::015824586188:role/amplify-pasmalves2-dev-104641-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-pasmalves2-dev-104641-deployment",
+      "UnauthRoleName": "amplify-pasmalves2-dev-104641-unauthRole",
+      "StackName": "amplify-pasmalves2-dev-104641",
+      "StackId": "arn:aws:cloudformation:eu-west-2:015824586188:stack/amplify-pasmalves2-dev-104641/06904e20-1e8b-11eb-8d15-061b8a4fe7a6",
+      "AmplifyAppId": "d2gbt4ndfsiii9"
+    },
+    "categories": {
+      "auth": {
+        "pasmalves2395a0134": {}
+      }
+    }
+  }
+}

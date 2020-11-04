@@ -4,6 +4,7 @@ import Navigation from './navigation';
 import Contact from './contact';
 import About from './about';
 import Header from './header';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 const App = () => {
 
@@ -15,9 +16,10 @@ const App = () => {
         <Header />
         <About />
         <Contact />
-        
+        <AmplifySignOut />
       </div>
     )
 }
 
-export default App
+export default withAuthenticator(App);
+

@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "pasmalves2395a0134": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
