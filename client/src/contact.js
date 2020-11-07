@@ -1,10 +1,69 @@
 import React from "react";
 
+import './App.css';
+
+import Amplify from "aws-amplify"
+import {Container, Button, Form} from 'react-bootstrap';
+import { API } from "aws-amplify";
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
+async function addContact() {
+  const data = {
+    body: {
+      name: formState.name,
+      email: formState.email,
+      message: formState.message
+    }
+  };
+
+  console.log(data);
+  const apiData = await API.post('pasmalvesapi', '/contact', data);
+  console.log({ apiData });
+  alert('Mail sent');
+}
+
+const formState = { name: '', email: '', message: '' };
+
+function updateFormState(key, value) {
+  formState[key] = value;
+}
+
+/* function Contact() {
+  return (
+
+    
+  <Container>
+  <div>
+    <h3>Get in touch</h3>
+    <br/>
+      <Form>
+        <Form.Group>
+          <Form.Label>Name</Form.Label>
+          <Form.Control placeholder="Name" onChange={e => updateFormState('name', e.target.value)} />
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Email</Form.Label>
+          <Form.Control placeholder="Email" onChange={e => updateFormState('email', e.target.value)} />
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Message</Form.Label>
+          <Form.Control placeholder="Message" onChange={e => updateFormState('message', e.target.value)} />
+        </Form.Group>
+        <Button onClick={addContact}>Send a message</Button>
+      </Form>
+    </div>
+  </Container>
+  )
+}
+
+export default Contact; */
+
+
 const Contact = () => {
     return (
       <div>
         <div id="contact">
-          <div className="container">
+        <Container>
             <div className="col-md-8 inline-block">
               <div className="row">
                 <div className="section-title">
@@ -17,44 +76,32 @@ const Contact = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
-                        <input
-                          type="text"
-                          id="name"
-                          className="form-control"
-                          placeholder="Name"
-                          required="required"
-                        />
+                      <Form.Group>
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control placeholder="Name" onChange={e => updateFormState('name', e.target.value)} />
+                        </Form.Group>
                         <p className="help-block text-danger"></p>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
-                        <input
-                          type="email"
-                          id="email"
-                          className="form-control"
-                          placeholder="Email"
-                          required="required"
-                        />
+                      <Form.Group>
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control placeholder="Email" onChange={e => updateFormState('email', e.target.value)} />
+                        </Form.Group>
                         <p className="help-block text-danger"></p>
                       </div>
                     </div>
                   </div>
                   <div className="form-group">
-                    <textarea
-                      name="message"
-                      id="message"
-                      className="form-control"
-                      rows="4"
-                      placeholder="Message"
-                      required
-                    ></textarea>
+                  <Form.Group>
+                  <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" rows={3} placeholder="Message" onChange={e => updateFormState('message', e.target.value)} />
+                    </Form.Group>
                     <p className="help-block text-danger"></p>
                   </div>
                   <div id="success"></div>
-                  <button type="submit" className="btn btn-custom btn-lg">
-                    Send Message
-                  </button>
+                  <Button onClick={addContact} className="btn btn-custom btn-lg">Send a message</Button>
                 </form>
               </div>
             </div>
@@ -94,7 +141,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-          </div>
+            </Container>
         </div>
         </div>
       
@@ -102,4 +149,4 @@ const Contact = () => {
   }
 
 
-export default Contact;
+export default Contact; 
