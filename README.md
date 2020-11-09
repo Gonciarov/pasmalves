@@ -11,6 +11,7 @@ Javascript, React, Bootstrap, HTML/CSS. Contact form: SES, Lambda, DynamoDB all 
 Clone this repo and do 
 
 ```
+cd client
 npm install
 npm start
 ``` 
