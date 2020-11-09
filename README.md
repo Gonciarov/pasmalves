@@ -17,3 +17,5 @@ npm start
 ``` 
 
 then go to ```localhost:3000``` in your browser.
+
+Another version nore suitable for deployment to Netlify is [here](https://github.com/Gonciarov/pasmalves2).
