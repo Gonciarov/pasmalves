@@ -2,11 +2,15 @@
 
 Landing page for Pasmalves, cargo transportation company (Lithuania). Deployed here, ready to be reviewed by more experienced developer, populated with newer pics and texts and sent to production.
 
+## deployed
+
+https://agitated-haibt-62666e.netlify.app/
+
 ## tech
 
 Javascript, React, Bootstrap, HTML/CSS. Contact form: SES, Lambda, DynamoDB all from AWS.
 
-## run
+## run locally
 
 Clone this repo and do 
 
