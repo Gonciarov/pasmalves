@@ -1,10 +1,6 @@
 # pasmalves
 
-Landing page for Pasmalves, cargo transportation company (Lithuania). Deployed here, ready to be reviewed by more experienced developer, populated with newer pics and texts and sent to production.
-
-## deployed
-
-https://agitated-haibt-62666e.netlify.app/
+Landing page for Pasmalves, cargo transportation company (Lithuania). Deployed [here](https://agitated-haibt-62666e.netlify.app/), ready to be reviewed by more experienced developer, populated with newer pics and texts and sent to production.
 
 ## tech
 
